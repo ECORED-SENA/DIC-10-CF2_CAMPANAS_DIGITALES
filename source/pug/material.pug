@@ -35,9 +35,11 @@ html(lang="es")
                             
                             .card-body
 
-                                ul.list-group.list-group-flush.list.my-n3.nav-temas
-                                    +navTemaItem('play', 'Introducción', '#introduccion')
-                                    +navTemaItem('1', 'Normativa vigente proceso ECCL', '#tema-1')
+                                ul.list-group.list-group-flush.list.my-n3.nav-temas 
+                                    +navTemaItem('text', 'Introducción', '#introduccion') 
+                                    +navTemaItem('1', 'Lienzo de valor', '#tema-1')
+                                    +navTemaItem('2', 'Plan de comunicación', '#tema-2')
+                                    +navTemaItem('3', 'Ecosistema digital y social media', '#tema-3')
                                     +navTemaItem('question', 'Actividad didáctica', '#evaluacion')
                                     +navTemaItem('glosary', 'Glosario', '#glosario')
                                     +navTemaItem('folder', 'Material complementario', '#anexos')
@@ -48,7 +50,11 @@ html(lang="es")
             #introduccion
                 include pages/introduccion.pug
             #tema-1
-                include pages/1-tema.pug
+                include pages/tema-1.pug
+            #tema-2
+                include pages/tema-2.pug
+            #tema-3
+                include pages/tema-3.pug
             #evaluacion
                 include pages/actividad-1.pug
             #glosario
